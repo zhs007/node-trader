@@ -20,5 +20,6 @@
   },
   "homepage": "https://github.com/zhs007/node-trader#readme",
   "dependencies": {
+    "moment": "^2.20.1"
   }
 }
