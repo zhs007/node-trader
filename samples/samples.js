@@ -47,3 +47,6 @@ console.log(nlst2);
 
 let nlst3 = procData('./samples/data003.json', '2018-01-05T05:00:00Z', '2018-01-06T05:00:00Z');
 console.log(nlst3);
+
+let nlst5 = procData('./samples/data005.json', '2010-05-15T05:00:00Z', '2010-05-16T05:00:00Z');
+console.log(nlst3);
