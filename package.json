@@ -1,6 +1,6 @@
 {
   "name": "libtrader",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "trader",
   "main": "index.js",
   "scripts": {
