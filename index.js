@@ -6,6 +6,14 @@ const {
 } = require('./lib/candles');
 
 const {
+    alignCandles2
+} = require('./lib/candles2');
+
+const {
+    buildCandles2
+} = require('./lib/deals2candles2');
+
+const {
     roundingDownTime,
     roundingUpTime,
     roundingOffTime,
@@ -47,3 +55,15 @@ exports.roundingOffTime = roundingOffTime;
 // time type is like 'h'
 // return jsdate
 exports.addTime = addTime;
+
+// lst is like ['YYYY-MM-DD 11:00:00', 'YYYY-MM_DD 11:02:00']
+// output is like ['YYYY-MM-DD 11:00:00', 'YYYY-MM_DD 11:01:00', 'YYYY-MM_DD 11:02:00']
+// options {realtime, ask_o, ask_c, ask_h, ask_l, bid_o, bid_c, bid_h, bid_l, op, cp, hp, lp, volume}
+// funcOff(timems) return new timems
+// [st, et]
+exports.alignCandles2 = alignCandles2;
+
+// dealsoptions {tsms, price, volume, askprice, askvolume, bidprice, bidvolume}
+// candlesoptions {realtime, ask_o, ask_c, ask_h, ask_l, bid_o, bid_c, bid_h, bid_l, op, cp, hp, lp, volume}
+// [st, et]
+exports.buildCandles2 = buildCandles2;
